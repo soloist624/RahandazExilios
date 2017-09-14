@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':numberprogressbar'
+project(':numberprogressbar').projectDir = new File('library')

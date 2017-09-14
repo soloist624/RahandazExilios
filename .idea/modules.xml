@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Rahandaz.iml" filepath="$PROJECT_DIR$/Rahandaz.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/numberprogressbar.iml" filepath="$PROJECT_DIR$/library/numberprogressbar.iml" />
     </modules>
   </component>
 </project>

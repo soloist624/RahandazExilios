@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="titles">
+        <item>Home</item>
+        <item>Top</item>
+        <item>Idea</item>
+        <item>Trend</item>
+    </array>
+
+</resources>
