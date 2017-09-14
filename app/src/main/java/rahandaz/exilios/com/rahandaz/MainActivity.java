@@ -1,23 +1,42 @@
 package rahandaz.exilios.com.rahandaz;
 
-import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener{
 
     ViewPager mViewPager;
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         mViewPager.setAdapter(new SamplePagerAdapter(getSupportFragmentManager()));
+        tabLayout = (TabLayout) findViewById(R.id.main_toolbar);
+        tabLayout.addOnTabSelectedListener(this);
+        tabLayout.setTabMode(TabLayout.MODE_FIXED);
+        tabLayout.setupWithViewPager(mViewPager);
+
+    }
+
+    @Override
+    public void onTabSelected(TabLayout.Tab tab) {
+        mViewPager.setCurrentItem(tab.getPosition(), true);
+    }
+
+    @Override
+    public void onTabUnselected(TabLayout.Tab tab) {
+
+    }
+
+    @Override
+    public void onTabReselected(TabLayout.Tab tab) {
 
     }
 
@@ -35,8 +54,7 @@ public class MainActivity extends AppCompatActivity{
 
         @Override
         public int getCount() {
-            // Show 2 total pages.
-            return 2;
+            return 7;
         }
     }
 
