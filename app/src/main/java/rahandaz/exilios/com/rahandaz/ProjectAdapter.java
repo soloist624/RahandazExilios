@@ -83,7 +83,8 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectI
 
         public void setData(ProjectModel current, int position) {
 
-            progressBar.setProgress(current.getCurrentAmount()/current.getGoalAmount()*100);
+            int temp = 100*current.getCurrentAmount()/current.getGoalAmount();
+            progressBar.setProgress(temp);
             category.setText(current.getCategory());
             currentPercent.setText((current.getCurrentAmount()/current.getGoalAmount()*100)+"");
             remainingTime.setText(current.getRemainingTime());
@@ -91,8 +92,8 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectI
             creator.setText(current.getCreator());
             description.setText(current.getDescription());
             this.position = position;
-            Glide.with(context).load(current.getImageUrl()).into(projectIMG);
-            Glide.with(context).load(current.getUserImageUri()).into(userIMG);
+//            Glide.with(context).load(current.getImageUrl()).into(projectIMG);
+//            Glide.with(context).load(current.getUserImageUri()).into(userIMG);
             this.current = current;
             background.setOnClickListener(this);
 

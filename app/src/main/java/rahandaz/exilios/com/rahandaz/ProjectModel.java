@@ -9,8 +9,19 @@ public class ProjectModel {
     String title, category, description, imageUrl, userImageUri, remainingTime, creator;
     int goalAmount, currentAmount, projectId;
 
-    public ProjectModel() {
+    public ProjectModel(String title, String category, String description, String imageUrl, String userImageUri, String remainingTime, String creator, int goalAmount, int currentAmount, int projectId) {
+        this.title = title;
+        this.category = category;
+        this.description = description;
+        this.imageUrl = imageUrl;
+        this.userImageUri = userImageUri;
+        this.remainingTime = remainingTime;
+        this.creator = creator;
+        this.goalAmount = goalAmount;
+        this.currentAmount = currentAmount;
+        this.projectId = projectId;
     }
+
 
     public String getTitle() {
         return title;

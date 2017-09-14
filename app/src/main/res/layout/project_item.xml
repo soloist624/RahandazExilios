@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/project_item_card"
+    android:layout_marginTop="6dp"
     app:cardCornerRadius="2dp">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="4dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

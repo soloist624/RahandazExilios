@@ -25,6 +25,10 @@ public class SampleFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_one, container, false);
         recyclerView = (RecyclerView) rootView.findViewById(R.id.page_recycler);
         ArrayList<ProjectModel> projectModels = new ArrayList<>();
+        ProjectModel a = new ProjectModel("hello","salamAleyk","Man ye hello hastam",null,null,"2","hajHassan",5000,4000,354351);
+        ProjectModel b = new ProjectModel("bye","salamAleyk","Man ye bye hastam",null,null,"5","hajHassan",30000,8000,413215);
+        projectModels.add(a);
+        projectModels.add(b);
         projectAdapter = new ProjectAdapter(getContext(), projectModels);
         recyclerView.setAdapter(projectAdapter);
 //
