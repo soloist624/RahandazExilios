@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
                 case 0:
                     return "Top";
                 case 1:
-                    return "Recent";
+                    return "Recents";
                 case 2:
-                    return "Trend";
+                    return "Trends";
                 default:
                     return "More";
             }
