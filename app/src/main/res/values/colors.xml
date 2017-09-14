@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
+    <color name="tabSelectedTextColor">#f6f6f7</color>
+    <color name="tabBackground">#4545ec</color>
+    <color name="tabTextColor">#d84a4c</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="main_toolbar_color">#4063ff</color>
-    <color name="tab_indicator_color">#ff4a40</color>
+    <color name="tab_indicator_color">#56ff40</color>
 </resources>

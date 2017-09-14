@@ -47,6 +47,20 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         }
 
         @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position){
+                case 0:
+                    return "Top";
+                case 1:
+                    return "Recent";
+                case 2:
+                    return "Trend";
+                default:
+                    return "More";
+            }
+        }
+
+        @Override
         public Fragment getItem(int position) {
             /** Show a Fragment based on the position of the current screen */
                 return new SampleFragment();
@@ -54,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
 
         @Override
         public int getCount() {
-            return 7;
+            return 4;
         }
     }
 
