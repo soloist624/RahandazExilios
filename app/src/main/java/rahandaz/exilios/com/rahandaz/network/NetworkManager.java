@@ -19,7 +19,8 @@ import java.net.URL;
 
 public class NetworkManager {
 //    172.20.4.19
-    public static final String baseUrl = "http://192.168.43.51:8585";
+//    192.168.43.51
+    public static final String baseUrl = "http://172.20.4.19:8585";
     public static boolean isConnected (Context context){
 
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);

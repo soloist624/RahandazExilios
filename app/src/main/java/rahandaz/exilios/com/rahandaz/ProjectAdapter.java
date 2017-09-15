@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.daimajia.numberprogressbar.NumberProgressBar;
 
 import java.util.ArrayList;
@@ -92,8 +93,8 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectI
             creator.setText(current.getCreator());
             description.setText(current.getDescription());
             this.position = position;
-//            Glide.with(context).load(current.getImageUrl()).into(projectIMG);
-//            Glide.with(context).load(current.getUserImageUri()).into(userIMG);
+            Glide.with(context).load(current.getImageUrl()).into(projectIMG);
+            Glide.with(context).load(current.getUserImageUri()).into(userIMG);
             this.current = current;
             background.setOnClickListener(this);
 

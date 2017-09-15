@@ -34,6 +34,7 @@ public class JsonParsers {
                 model.setGoalAmount(obj.getInt("need_price"));
                 model.setCurrentAmount(obj.getInt("fund_sum"));
                 model.setDescription(obj.getString("description"));
+                model.setImageUrl(obj.getString("image"));
                 JSONArray a = new JSONArray(obj.getString("creators"));
                 JSONObject o = a.getJSONObject(0);
                 model.setCreator(o.getString("name"));
