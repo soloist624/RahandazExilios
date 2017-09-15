@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.daimajia.numberprogressbar.NumberProgressBar;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import rahandaz.exilios.com.rahandaz.Models.ProjectModel;
 
 /**
  * Created by NaviD on 8/15/2017.

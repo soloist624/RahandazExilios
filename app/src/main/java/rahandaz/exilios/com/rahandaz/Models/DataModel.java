@@ -1,4 +1,4 @@
-package rahandaz.exilios.com.rahandaz;
+package rahandaz.exilios.com.rahandaz.Models;
 
 /**
  * Created by NaviD on 9/15/2017.

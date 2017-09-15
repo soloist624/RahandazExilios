@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="rahandaz.exilios.com.rahandaz.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -16,12 +16,13 @@
             android:layout_height="?android:attr/actionBarSize"
             android:layout_alignParentTop="true"
             android:id="@+id/toolbar"
-            android:background="@color/cardview_dark_background">
+            android:background="@color/toolbar_color">
         </android.support.v7.widget.Toolbar>
 
         <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
             <android.support.design.widget.AppBarLayout
                 android:id="@+id/app_bar_layout"
                 android:layout_width="match_parent"
@@ -48,7 +49,17 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent" />
         </android.support.design.widget.CoordinatorLayout>
-    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/fetching_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
 
     <ListView android:id="@+id/left_drawer"
         android:layout_width="240dp"

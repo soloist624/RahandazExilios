@@ -1,4 +1,4 @@
-package rahandaz.exilios.com.rahandaz;
+package rahandaz.exilios.com.rahandaz.Models;
 
 /**
  * Created by NaviD on 9/14/2017.
@@ -6,8 +6,12 @@ package rahandaz.exilios.com.rahandaz;
 
 public class ProjectModel {
 
-    String title, category, description, imageUrl, userImageUri, remainingTime, creator;
-    int goalAmount, currentAmount, projectId;
+    String title="", category="", description="", imageUrl="", userImageUri="", remainingTime="", creator="";
+    int goalAmount=0, currentAmount=0, projectId=0, catType=0;
+
+    public ProjectModel(){
+
+    }
 
     public ProjectModel(String title, String category, String description, String imageUrl, String userImageUri, String remainingTime, String creator, int goalAmount, int currentAmount, int projectId) {
         this.title = title;
@@ -101,5 +105,13 @@ public class ProjectModel {
 
     public void setProjectId(int projectId) {
         this.projectId = projectId;
+    }
+
+    public int getCatType() {
+        return catType;
+    }
+
+    public void setCatType(int catType) {
+        this.catType = catType;
     }
 }

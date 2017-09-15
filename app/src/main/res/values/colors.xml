@@ -6,6 +6,7 @@
     <color name="tabTextColor">#d84a4c</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="toolbar_color">#e49b3b</color>
     <color name="main_toolbar_color">#4063ff</color>
     <color name="tab_indicator_color">#56ff40</color>
 </resources>

@@ -1,2 +1,3 @@
-include ':app', ':numberprogressbar'
+include ':app', ':numberprogressbar', ':expandableLayoutLi'
 project(':numberprogressbar').projectDir = new File('library')
+project(':expandableLayoutLi').projectDir = new File('expandableLayoutLib')
